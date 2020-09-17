@@ -109,8 +109,8 @@ const users = [
   },
 ];
 // Write code under this line
-
-const getUserNames = array => array;
+// const getUserNames = array => array.map(array => array.name); !Здесь без ДП
+const getUserNames = array => array.map(({ name }) => name);
 
 console.log(getUserNames(users));
 
